@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    gap: 20px;
+}
+
+.tools {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.colorInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brushSizeInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #333;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+#canvas {
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    cursor: crosshair;
+}
